@@ -19,8 +19,8 @@ jobs:
         node-version: '12.x'
     - name: Install Caprover CLI
       run: npm install -g caprover
-    - name: Login
-      run: caprover login
+#     - name: Login
+#       run: caprover login
     - name: Deploy
       run: caprover deploy -a ${{ secrets.CAPROVER_APP }}
     - name: Logout
