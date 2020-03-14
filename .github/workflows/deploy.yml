@@ -8,6 +8,7 @@ env:
   CAPROVER_NAME: ${{ github.sha }}
   CAPROVER_URL: ${{ secrets.CAPROVER_URL }}
   CAPROVER_PASSWORD: ${{ secrets.CAPROVER_PASSWORD }}
+  CAPROVER_BRANCH: master
 
 jobs:
   deploy:
