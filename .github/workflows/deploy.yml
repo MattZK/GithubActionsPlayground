@@ -23,5 +23,6 @@ jobs:
       run: caprover login
     - name: Deploy
       run: caprover deploy -a ${{ secrets.CAPROVER_APP }}
+      continue-on-error: true
     - name: Logout
       run: caprover logout
