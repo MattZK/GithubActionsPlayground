@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 env:
-  CAPROVER_NAME: ${{ GITHUB_SHA }}
+  CAPROVER_NAME: ${{ github.sha }}
   CAPROVER_URL: ${{ secrets.CAPROVER_URL }}
   CAPROVER_PASSWORD: ${{ secrets.CAPROVER_PASSWORD }}
 
